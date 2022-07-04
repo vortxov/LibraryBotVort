@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LibraryBot.Program">
+    <Position X="3.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAIAAABAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="handlers" />
+      <Property Name="searchBooks" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibraryBot.Service.Handlers">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIACAAABAEARAEgAQABAIAAAAAIACACAAAAAAAAAA=</HashCode>
+      <FileName>Service\Handlers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibraryBot.Service.SearchBooks">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAEQAAAAAAgCAACCAgAAAAIAAAEAAAEAAAAAA=</HashCode>
+      <FileName>Service\SearchBooks.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataManager" />
+      <Property Name="pageParse" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibraryBot.Domain.DataManager">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQIACAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="author" />
+      <Property Name="appDbContext" />
+      <Property Name="genre" />
+      <Property Name="book" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibraryBot.Domain.Repositories.AuthorRepository">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAACAAAAAAABAAABAAAgAACQAAAAAAAA=</HashCode>
+      <FileName>Domain\Repositories\AuthorRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="app" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibraryBot.Domain.AppDbContext">
+    <Position X="14.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAIAAAAAgABAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Domain\AppDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryBot.Domain.Repositories.GenreRepository">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEAAAAAAAIACCAAAAAAAAAAAAAAAABACAAAAAAAAA=</HashCode>
+      <FileName>Domain\Repositories\GenreRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="app" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibraryBot.Domain.Repositories.BookRepository">
+    <Position X="14.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAAAEAAAAACAAAAAACAAAAgAAAACAAAAAAAAA=</HashCode>
+      <FileName>Domain\Repositories\BookRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="app" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibraryBot.Service.PageParse">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\PageParse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
